@@ -95,7 +95,8 @@ export async function selectMatch(
       .join('');
 
     try {
-      const parsed = JSON.parse(raw.trim());
+      const cleaned = raw.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+      const parsed = JSON.parse(cleaned);
       const result = MatchSchema.parse(parsed);
 
       // Validate that the returned id is actually in our candidate list

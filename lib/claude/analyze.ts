@@ -94,7 +94,8 @@ export async function extractEmotionAndTheme(
       .join('');
 
     try {
-      const parsed = JSON.parse(raw.trim());
+      const cleaned = raw.trim().replace(/^```(?:json)?\s*/i, '').replace(/\s*```$/, '');
+      const parsed = JSON.parse(cleaned);
       return AnalysisSchema.parse(parsed);
     } catch {
       if (attempt === 2) {
