@@ -1,0 +1,173 @@
+{
+  "fragments": [
+    {
+      "id": "frg_aB1cD2",
+      "createdAt": "2026-04-01T08:12:00.000Z",
+      "kind": "text",
+      "content": { "text": "I keep starting letters I never send. They sit in a folder named 'drafts' that I never open.", "imageUrl": null },
+      "userTag": "restless",
+      "analysis": {
+        "emotion": "restless",
+        "theme": "unfinished communication",
+        "perspectiveSignal": "introspective, written, solitary"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_eF3gH4",
+      "createdAt": "2026-04-01T09:30:00.000Z",
+      "kind": "text",
+      "content": { "text": "My grandmother's house smelled like cardamom and old newspapers. I realized last week I can no longer picture the kitchen.", "imageUrl": null },
+      "userTag": "longing",
+      "analysis": {
+        "emotion": "nostalgic",
+        "theme": "memory and sensory loss",
+        "perspectiveSignal": "embodied, childhood, gradual"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_iJ5kL6",
+      "createdAt": "2026-04-01T11:00:00.000Z",
+      "kind": "text",
+      "content": { "text": "I said yes to a thing I did not want to do, and now I have to become a person who wanted it.", "imageUrl": null },
+      "userTag": "restless",
+      "analysis": {
+        "emotion": "conflicted",
+        "theme": "obligation and self-betrayal",
+        "perspectiveSignal": "performative, social, reluctant"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_mN7oP8",
+      "createdAt": "2026-04-01T13:15:00.000Z",
+      "kind": "text",
+      "content": { "text": "The project I was most proud of shipped last month. Nobody mentioned it. I'm not sure what I expected.", "imageUrl": null },
+      "userTag": "grief",
+      "analysis": {
+        "emotion": "melancholy",
+        "theme": "invisible labor and recognition",
+        "perspectiveSignal": "professional, quiet disappointment, retrospective"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_qR9sT0",
+      "createdAt": "2026-04-02T07:45:00.000Z",
+      "kind": "text",
+      "content": { "text": "I have been practicing saying no for three years. I am still not good at it. I think I am afraid of the silence after.", "imageUrl": null },
+      "userTag": "restless",
+      "analysis": {
+        "emotion": "anxious",
+        "theme": "boundaries and fear of rejection",
+        "perspectiveSignal": "ongoing practice, relational, self-aware"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_uV1wX2",
+      "createdAt": "2026-04-02T10:30:00.000Z",
+      "kind": "text",
+      "content": { "text": "My daughter asked me why the sky turns orange at sunset. I gave her the scientific answer. Later I wished I had just said: because the day is tired too.", "imageUrl": null },
+      "userTag": "tender",
+      "analysis": {
+        "emotion": "tender",
+        "theme": "parenthood and lost poetic moments",
+        "perspectiveSignal": "retrospective regret, parental, gentle"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_yZ3aB4",
+      "createdAt": "2026-04-02T14:00:00.000Z",
+      "kind": "text",
+      "content": { "text": "There is a version of me that took the other road. I do not know if he is happier. I hope he wonders about me too.", "imageUrl": null },
+      "userTag": "longing",
+      "analysis": {
+        "emotion": "wistful",
+        "theme": "parallel lives and roads not taken",
+        "perspectiveSignal": "speculative, bifurcated self, mutual longing"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_cD5eF6",
+      "createdAt": "2026-04-03T08:00:00.000Z",
+      "kind": "text",
+      "content": { "text": "I used to think loneliness was about being alone. Now I think it's about being unseen by the people who are right there.", "imageUrl": null },
+      "userTag": "longing",
+      "analysis": {
+        "emotion": "lonely",
+        "theme": "invisibility within intimacy",
+        "perspectiveSignal": "relational, revised understanding, present"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_gH7iJ8",
+      "createdAt": "2026-04-03T10:20:00.000Z",
+      "kind": "text",
+      "content": { "text": "I sat with a stranger on a bench for twenty minutes neither of us speaking. When she left she said thank you. I still think about it.", "imageUrl": null },
+      "userTag": "wonder",
+      "analysis": {
+        "emotion": "moved",
+        "theme": "silent human connection",
+        "perspectiveSignal": "brief, public, wordless, grateful"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_kL9mN0",
+      "createdAt": "2026-04-03T14:45:00.000Z",
+      "kind": "text",
+      "content": { "text": "I have been trying to write the same poem for six years. Every time I finish it, it becomes something else. I think I am afraid it will end.", "imageUrl": null },
+      "userTag": "restless",
+      "analysis": {
+        "emotion": "frustrated",
+        "theme": "creative avoidance and attachment",
+        "perspectiveSignal": "long-term, iterative, fear of completion"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_oP1qR2",
+      "createdAt": "2026-04-04T09:00:00.000Z",
+      "kind": "text",
+      "content": { "text": "My father learned to say I love you when he was seventy. It came out formal, like reading from a card. I preferred it to nothing.", "imageUrl": null },
+      "userTag": "grief",
+      "analysis": {
+        "emotion": "grieving",
+        "theme": "late emotional literacy and acceptance",
+        "perspectiveSignal": "familial, late-life, imperfect tenderness"
+      },
+      "matchedWith": null,
+      "responses": []
+    },
+    {
+      "id": "frg_sT3uV4",
+      "createdAt": "2026-04-04T12:30:00.000Z",
+      "kind": "text",
+      "content": { "text": "I keep finding small things that delight me — a particular green, the weight of a good mug — and I don't know who to tell.", "imageUrl": null },
+      "userTag": "wonder",
+      "analysis": {
+        "emotion": "hopeful",
+        "theme": "private joy and the need to share it",
+        "perspectiveSignal": "sensory, present-tense, quietly urgent"
+      },
+      "matchedWith": null,
+      "responses": []
+    }
+  ],
+  "meta": { "version": 1, "lastWriteAt": "2026-04-04T12:30:00.000Z" }
+}

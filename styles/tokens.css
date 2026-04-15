@@ -1,0 +1,147 @@
+/* ─────────────────────────────────────────────────────────────────────────── *
+ * Drift — Design Tokens
+ * Style direction: quiet editorial, paper-and-ink physicality
+ * ─────────────────────────────────────────────────────────────────────────── */
+
+:root {
+  /* ── Color ─────────────────────────────────────────────────────────────── */
+
+  /* Surfaces */
+  --color-paper:        oklch(97% 0.012 80);   /* warm off-white, main bg  */
+  --color-paper-raised: oklch(99% 0.008 80);   /* cards, lifted surfaces   */
+  --color-paper-sunken: oklch(94% 0.015 80);   /* input bg, inset areas    */
+
+  /* Text */
+  --color-ink:          oklch(22% 0.02 60);    /* near-black with warmth   */
+  --color-ink-muted:    oklch(42% 0.018 65);   /* secondary text           */
+  --color-ink-faint:    oklch(62% 0.014 70);   /* placeholder / captions   */
+
+  /* Accent — ember, used sparingly: CTAs, active chips, focus */
+  --color-ember:        oklch(63% 0.16 45);
+  --color-ember-dim:    oklch(70% 0.12 45);    /* hover state              */
+  --color-ember-glow:   oklch(63% 0.16 45 / 0.12); /* focus ring fill     */
+
+  /* Per-emotion tints — 1px underline / icon only, never fills */
+  --color-emotion-restless:   oklch(68% 0.13 50);
+  --color-emotion-tender:     oklch(65% 0.12 340);
+  --color-emotion-grief:      oklch(45% 0.08 260);
+  --color-emotion-longing:    oklch(58% 0.14 290);
+  --color-emotion-wonder:     oklch(68% 0.12 200);
+
+  /* Borders */
+  --color-border:        oklch(88% 0.01 75);   /* standard whisper border  */
+  --color-border-strong: oklch(78% 0.015 70);  /* focused / active border  */
+
+  /* ── Typography ──────────────────────────────────────────────────────── */
+
+  /* Families — loaded via next/font in layout.tsx */
+  --font-display: 'Fraunces', 'Georgia', serif;
+  --font-ui:      'Inter Tight', 'Inter', system-ui, sans-serif;
+
+  /* Scale — fluid, clamp(min, preferred, max) */
+  --text-hero:    clamp(2.75rem, 1.5rem + 5vw, 5.5rem);  /* 44 → 88px    */
+  --text-xl:      clamp(1.5rem,  1rem + 2vw, 2.25rem);   /* 24 → 36px    */
+  --text-lg:      clamp(1.375rem, 1rem + 1vw, 1.75rem);  /* 22 → 28px   */  /* fragment reading size */
+  --text-base:    clamp(1rem, 0.92rem + 0.4vw, 1.125rem);
+  --text-sm:      0.875rem;
+  --text-xs:      0.75rem;
+
+  /* Line heights */
+  --leading-tight:  1.15;
+  --leading-snug:   1.3;
+  --leading-normal: 1.55;
+  --leading-relaxed: 1.75;
+
+  /* Letter spacing */
+  --tracking-hero: -0.03em;
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.06em;   /* caps/tags */
+
+  /* ── Spacing ─────────────────────────────────────────────────────────── */
+  --space-1:   0.25rem;   /*  4px */
+  --space-2:   0.5rem;    /*  8px */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-5:   1.25rem;   /* 20px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-10:  2.5rem;    /* 40px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-20:  5rem;      /* 80px */
+  --space-section: clamp(4rem, 3rem + 5vw, 8rem);  /* major section gap  */
+
+  /* Content measure */
+  --measure-narrow: 36ch;  /* drop / respond composer              */
+  --measure-base:   60ch;  /* body copy                            */
+  --measure-wide:   80ch;  /* max content width (non-hero columns) */
+
+  /* ── Borders & Radius ────────────────────────────────────────────────── */
+  --radius-sm:   3px;
+  --radius-md:   6px;
+  --radius-lg:   12px;
+  --radius-pill: 9999px;
+
+  /* ── Shadows (multi-layer, sub-0.06 opacity each) ───────────────────── */
+  --shadow-card:
+    0 1px 2px oklch(22% 0.02 60 / 0.04),
+    0 3px 8px oklch(22% 0.02 60 / 0.05),
+    0 8px 20px oklch(22% 0.02 60 / 0.04);
+
+  --shadow-paper:            /* lifted PaperSurface with ink depth */
+    0 1px 1px oklch(22% 0.02 60 / 0.06),
+    0 4px 12px oklch(22% 0.02 60 / 0.07),
+    0 16px 40px oklch(22% 0.02 60 / 0.05),
+    0 32px 64px oklch(22% 0.02 60 / 0.03);
+
+  --shadow-focus:
+    0 0 0 3px var(--color-ember-glow);
+
+  /* ── Motion ──────────────────────────────────────────────────────────── */
+  --duration-fast:   150ms;
+  --duration-normal: 300ms;
+  --duration-slow:   500ms;
+  --duration-drift:  600ms;  /* drift-in animation on Catch page  */
+
+  --ease-out-expo:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:     cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Z-index ─────────────────────────────────────────────────────────── */
+  --z-base:    0;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-modal:   200;
+}
+
+/* ── Reduced motion ────────────────────────────────────────────────────────── */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast:   0ms;
+    --duration-normal: 0ms;
+    --duration-slow:   0ms;
+    --duration-drift:  0ms;
+  }
+}
+
+/* ── Base resets ───────────────────────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-ui);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::selection {
+  background-color: var(--color-ember-glow);
+  color: var(--color-ink);
+}
