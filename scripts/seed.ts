@@ -1,12 +1,12 @@
 /**
- * Seed script — populates Vercel KV with seed.json fragments if KV is empty.
+ * Seed script — populates Upstash Redis with seed.json fragments if empty.
  * Runs automatically via `predev` (local) and as part of Vercel build command.
  *
- * Requires KV_REST_API_URL + KV_REST_API_TOKEN in environment.
- * Locally: run `npx vercel env pull .env.local` after linking the project.
+ * Requires UPSTASH_REDIS_REST_URL + UPSTASH_REDIS_REST_TOKEN in environment.
+ * Get these from Vercel dashboard → Integrations → Upstash Redis → your database.
  */
 
-import { kv } from '@vercel/kv';
+import { Redis } from '@upstash/redis';
 import fs from 'fs';
 import path from 'path';
 import { FragmentStoreSchema } from '../lib/validation/fragmentSchema';
@@ -16,14 +16,16 @@ const IDS_KEY = 'fragments:ids';
 const fragKey = (id: string) => `fragment:${id}`;
 
 async function seed() {
-  if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) {
-    console.log('[seed] KV credentials not found — skipping (set KV_REST_API_URL + KV_REST_API_TOKEN).');
+  if (!process.env.UPSTASH_REDIS_REST_URL || !process.env.UPSTASH_REDIS_REST_TOKEN) {
+    console.log('[seed] Redis credentials not found — skipping.');
     return;
   }
 
+  const kv = Redis.fromEnv();
+
   const count = await kv.scard(IDS_KEY);
   if (count > 0) {
-    console.log(`[seed] KV already has ${count} fragments — skipping.`);
+    console.log(`[seed] Redis already has ${count} fragments — skipping.`);
     return;
   }
 
@@ -41,7 +43,7 @@ async function seed() {
     await kv.sadd(IDS_KEY, fragment.id);
   }
 
-  console.log(`[seed] Seeded ${store.fragments.length} fragments into KV.`);
+  console.log(`[seed] Seeded ${store.fragments.length} fragments into Redis.`);
 }
 
 seed().catch((e) => {
